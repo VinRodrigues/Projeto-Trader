@@ -61,7 +61,7 @@
           
             <p>+Fluxo Principal</p>
 
-<ol><li>Usuário acessa a interface de ativos[FS001]</li><li>Usuário verifica valores de ativos.</li><li>O usuário seleciona o ativo que deseja vender.</li><li>O usuário visualiza um gráfico infraday e histórico da ação, o gráfico mostra o valor atual, abertura, fechamento anterior, máximo e mínimo.</li><li>O usuário envia ordens de venda.[FS002]</li><li>B3 avalia ordem de venda.</li><li>B3 autoriza a ordem de venda.</li></ol>
+<ol><li>Usuário acessa a interface de ativos[FS001]</li><li>Usuário verifica valores de ativos.</li><li>O usuário seleciona o ativo que deseja vender.</li><li>O usuário visualiza um gráfico infraday e histórico da ação, o gráfico mostra o valor atual, abertura, fechamento anterior, máximo e mínimo.</li><li>O usuário envia ordens de venda.[FS002]</li><li>S2 avalia ordem de compra .</li><li>S2 envia ordem de compra para a B3.</li><li>B3 analisa a solicitação da S2.</li><li>B3 autoriza a solicitação de ordem de compra da S2 feita pelo usuário.</li><li>S2 Envia a reposta para o usuário.</li></ol>
 
 <p>+Fluxo Secundário[FS001]</p>
 
@@ -138,7 +138,7 @@
         
         <li><a href='9b711e81b90aaff5f71537437865c816.html'><span class='node-icon staruml-icon icon-UMLActor'></span>Usuario</a></li>
         
-        <li><a href='d75462a406b545920d9e4c66383faf4a.html'><span class='node-icon staruml-icon icon-UMLActor'></span>B3</a></li>
+        <li><a href='d75462a406b545920d9e4c66383faf4a.html'><span class='node-icon staruml-icon icon-UMLActor'></span>S2</a></li>
         
     </ul>
 </section>
@@ -147,8 +147,12 @@
 
         
         
+
+
+        
+        
 <section class="element-list">
-    <h3>Included Use Cases</h3>
+    <h3>Extending Use Cases</h3>
     <ul class="nav nav-list">
         
         <li><a href='86638d22816f827c5d60800910a93a59.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>OV com Gatilho</a></li>
@@ -158,10 +162,6 @@
     </ul>
 </section>
 
-
-
-        
-        
 
       
 
@@ -388,11 +388,11 @@
         
         <li><a href='6ca3a187aec439e96adb34fd7bfed687.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Usuario—Ordem de Venda)</a></li>
         
-        <li><a href='473f527e38af2d209fc419f22f82ede6.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Ordem de Venda→OV com Gatilho)</a></li>
+        <li><a href='bc7e5d993c97728cdcf75ea860b3ac83.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(S2—Ordem de Venda)</a></li>
         
-        <li><a href='2e8f6a6a1db09a261c772cb449770bcc.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Ordem de Venda→OV a Mercado)</a></li>
+        <li><a href='43a1db6e7296a34f5ab701d42957d1ef.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(OV com Gatilho→Ordem de Venda)</a></li>
         
-        <li><a href='bc7e5d993c97728cdcf75ea860b3ac83.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(B3—Ordem de Venda)</a></li>
+        <li><a href='a3e27f219c9904ab2e461e5d4ce87b0a.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(OV a Mercado→Ordem de Venda)</a></li>
         
     </ul>
 </section>
@@ -403,17 +403,6 @@
 
       
       
-<section class="element-list">
-    <h3>Owned Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='473f527e38af2d209fc419f22f82ede6.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Ordem de Venda→OV com Gatilho)</a></li>
-        
-        <li><a href='2e8f6a6a1db09a261c772cb449770bcc.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Ordem de Venda→OV a Mercado)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->

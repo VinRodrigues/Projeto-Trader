@@ -61,7 +61,7 @@
           
             <p>+Fluxo Principal</p>
 
-<ol><li>O usuário acessa a carteira de ações.[F001]</li><li>O usuário visualiza OC e OV, como opções em sua carteira. </li><li>O Usuário seleciona a opção OC.[F002]</li><li>O usuário ativa um aviso caso ele esteja negociando o mercado fracionário.</li><li>O usuário autoriza  compra de ação fracionado/ lote automaticamente</li><li>O usuário recebe um aviso de compra no mercado fracionário. </li></ol>
+<ol><li>O usuário acessa a carteira de ações.[F001]</li><li>O usuário visualiza OC e OV, como opções em sua carteira. </li><li>O Usuário seleciona a opção OC.[F002]</li><li>O usuário ativa um aviso caso ele esteja negociando o mercado fracionário.</li><li>O usuário autoriza  compra de ação fracionado/ lote automaticamente.[F003]</li><li>O usuário compra lote.</li><li>O usuário seleciona a quantidade do lote</li><li>O usuário recebe um aviso de compra no mercado fracionário. </li></ol>
 
 <p>+Fluxo Secundário.[F001]</p>
 
@@ -69,7 +69,12 @@
 
 <p>+Fluxo Secundário.[F002]</p>
 
-<ol><li>O Usuário seleciona a opção OV.[F002]</li><li>O usuário ativa um aviso caso ele esteja negociando o mercado fracionário.</li><li>O usuário autoriza  venda de ação fracionado/ lote automaticamente</li><li>O usuário recebe um aviso de venda no mercado fracionário. </li></ol>
+<ol><li>O Usuário seleciona a opção OV.</li><li>O usuário ativa um aviso caso ele esteja negociando o mercado fracionário.</li><li>O usuário autoriza  venda de ação fracionado/ lote automaticamente</li><li>O usuário recebe um aviso de venda no mercado fracionário. </li></ol>
+
+<p>+Fluxo Secundário.[F003]
+1. O usuário inicia ordem de compra.
+2. A compra não é autorizada, por falta de fundos da carteira.
+3. A ordem de compra se encerra.</p>
           
         </div>
       </section>
@@ -138,6 +143,8 @@
         
         <li><a href='9b711e81b90aaff5f71537437865c816.html'><span class='node-icon staruml-icon icon-UMLActor'></span>Usuario</a></li>
         
+        <li><a href='5c38dd05d02cae098b661e2afc58ce75.html'><span class='node-icon staruml-icon icon-UMLActor'></span>B3</a></li>
+        
     </ul>
 </section>
 
@@ -145,8 +152,12 @@
 
         
         
+
+
+        
+        
 <section class="element-list">
-    <h3>Included Use Cases</h3>
+    <h3>Extending Use Cases</h3>
     <ul class="nav nav-list">
         
         <li><a href='adaa21117d59743e53fe8d7de3e8da86.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>Organização de ações na carteira</a></li>
@@ -155,13 +166,11 @@
         
         <li><a href='cdd5885cd10c8b83cefa8003e81b1083.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>Botão de Negocio Rápido</a></li>
         
+        <li><a href='68e0611da3e8fa1d2524a88c76065c0e.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>Simulação</a></li>
+        
     </ul>
 </section>
 
-
-
-        
-        
 
       
 
@@ -388,11 +397,15 @@
         
         <li><a href='1b1765ea1030b76c95dfe9fd08f00abb.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Visualizar Carteira de ações—Usuario)</a></li>
         
-        <li><a href='2c25420d873747962e4dd7586b43b135.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Visualizar Carteira de ações→Organização de ações na carteira)</a></li>
+        <li><a href='65cd5671548172e4d223ee7f404c8771.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(Organização de ações na carteira→Visualizar Carteira de ações)</a></li>
         
-        <li><a href='f524d718c73e06b13672ad7e6786a777.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Visualizar Carteira de ações→Cotação de ações em carteira)</a></li>
+        <li><a href='910009c93bcf3239c91dcfe31ca41217.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(Cotação de ações em carteira→Visualizar Carteira de ações)</a></li>
         
-        <li><a href='71b7df5f92c90b110faa12e2a979107c.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Visualizar Carteira de ações→Botão de Negocio Rápido)</a></li>
+        <li><a href='bcc09dff0448e7fad7e59579bc67bb8f.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(Botão de Negocio Rápido→Visualizar Carteira de ações)</a></li>
+        
+        <li><a href='fdc7b7f904b4576bd85fd81bc6b97507.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(Simulação→Visualizar Carteira de ações)</a></li>
+        
+        <li><a href='246ab41839dddc9bb7b59e9026eec58b.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(B3—Visualizar Carteira de ações)</a></li>
         
     </ul>
 </section>
@@ -408,12 +421,6 @@
     <ul class="nav nav-list">
         
         <li><a href='1b1765ea1030b76c95dfe9fd08f00abb.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Visualizar Carteira de ações—Usuario)</a></li>
-        
-        <li><a href='2c25420d873747962e4dd7586b43b135.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Visualizar Carteira de ações→Organização de ações na carteira)</a></li>
-        
-        <li><a href='f524d718c73e06b13672ad7e6786a777.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Visualizar Carteira de ações→Cotação de ações em carteira)</a></li>
-        
-        <li><a href='71b7df5f92c90b110faa12e2a979107c.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Visualizar Carteira de ações→Botão de Negocio Rápido)</a></li>
         
     </ul>
 </section>

@@ -61,7 +61,7 @@
           
             <p>+Fluxo Principal</p>
 
-<ol><li>O usuário acessa a interface de ativos[FS001]</li><li>O usuário verifica valores de ativos.</li><li>O usuário seleciona o ativo que deseja comprar.</li><li>O usuário visualiza um gráfico infraday e histórico da ação, o gráfico mostra o valor atual, abertura, fechamento anterior, máximo e mínimo.</li><li>O usuário envia ordens de compra.[FS002]</li><li>B3 avalia ordem de compra .</li><li>B3 autoriza a ordem de compra.</li></ol>
+<ol><li>O usuário acessa a interface de ativos[FS001]</li><li>O usuário verifica valores de ativos.</li><li>O usuário seleciona o ativo que deseja comprar.</li><li>O usuário visualiza um gráfico infraday e histórico da ação, o gráfico mostra o valor atual, abertura, fechamento anterior, máximo e mínimo.</li><li>O usuário envia ordens de compra.[FS002]</li><li>S2 avalia ordem de compra .</li><li>S2 envia ordem de compra para a B3.</li><li>B3 analisa a solicitação da S2.</li><li>B3 autoriza a solicitação de ordem de compra da S2 feita pelo usuário.</li><li>S2 Envia a reposta para o usuário.</li></ol>
 
 <p>+Fluxo Secundário[FS001]</p>
 
@@ -69,7 +69,7 @@
 
 <p>+Fluxo Secundário[FS002]</p>
 
-<ol><li>Usuário solicita OC por quantidade de ações ou por valor financeiro.</li><li>Usuário checa o status da ordem de compra.</li></ol>
+<ol><li>Usuário solicita OC por quantidade de ações ou por valor financeiro para o S2.</li><li>S2 envia solicitação para a B3.</li><li>B3 analisa a solicitação da S2.</li><li>B3 autoriza a solicitação de ordem de compra da S2 feita pelo usuário.</li><li>S2 Envia a reposta para o usuário.</li></ol>
           
         </div>
       </section>
@@ -138,30 +138,30 @@
         
         <li><a href='9b711e81b90aaff5f71537437865c816.html'><span class='node-icon staruml-icon icon-UMLActor'></span>Usuario</a></li>
         
-        <li><a href='d75462a406b545920d9e4c66383faf4a.html'><span class='node-icon staruml-icon icon-UMLActor'></span>B3</a></li>
+        <li><a href='d75462a406b545920d9e4c66383faf4a.html'><span class='node-icon staruml-icon icon-UMLActor'></span>S2</a></li>
         
     </ul>
 </section>
 
+
+
+        
+        
 
 
         
         
 <section class="element-list">
-    <h3>Included Use Cases</h3>
+    <h3>Extending Use Cases</h3>
     <ul class="nav nav-list">
         
-        <li><a href='4926e9bc99c8e07eb95e9ad8d3d61b96.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>OC a Mercado</a></li>
-        
         <li><a href='79fb6e58ab027e51188f2063d49471c4.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>OC com Gatilho</a></li>
+        
+        <li><a href='4926e9bc99c8e07eb95e9ad8d3d61b96.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>OC a Mercado</a></li>
         
     </ul>
 </section>
 
-
-
-        
-        
 
       
 
@@ -388,11 +388,11 @@
         
         <li><a href='92d0af58cea1fe9acb4170d21aa1ad10.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Usuario—Ordem de Compra)</a></li>
         
-        <li><a href='d281d984b906bf596cfc239cc75d51ba.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Ordem de Compra→OC a Mercado)</a></li>
+        <li><a href='d93873e552d6c67bed71ae7c80fe03eb.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(S2—Ordem de Compra)</a></li>
         
-        <li><a href='3c27d75ee94b63ea24caf9e39f297df5.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Ordem de Compra→OC com Gatilho)</a></li>
+        <li><a href='cef02cfa1e768047f9dc5e71ac5d602e.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(OC com Gatilho→Ordem de Compra)</a></li>
         
-        <li><a href='d93873e552d6c67bed71ae7c80fe03eb.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(B3—Ordem de Compra)</a></li>
+        <li><a href='e666159517e4366b5faa6dbc66b823ae.html'><span class='node-icon staruml-icon icon-UMLExtend'></span>(OC a Mercado→Ordem de Compra)</a></li>
         
     </ul>
 </section>
@@ -403,17 +403,6 @@
 
       
       
-<section class="element-list">
-    <h3>Owned Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='d281d984b906bf596cfc239cc75d51ba.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Ordem de Compra→OC a Mercado)</a></li>
-        
-        <li><a href='3c27d75ee94b63ea24caf9e39f297df5.html'><span class='node-icon staruml-icon icon-UMLInclude'></span>(Ordem de Compra→OC com Gatilho)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->

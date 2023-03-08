@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Modificação de OC</title>
+    <title></title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,15 +19,17 @@
 
       <!-- Name Title -->
 
-      <h1>Modificação de OC</h1>
+      <h1>(unnamed)</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLUseCase"></span>
-          UMLUseCase
+          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
+          UMLAssociationEnd
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -44,7 +46,13 @@
           <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Model</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='02ad9d158bb436d25f37f36e85e7904a.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>Modificação de OC</a></span>
+          <span class="label label-info"><a href='d75462a406b545920d9e4c66383faf4a.html'><span class='node-icon staruml-icon icon-UMLActor'></span>S2</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='b817b6c25dcf1abb7f13d57d55dcfec0.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(S2—B3)</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='fbb08a1f6a6e2e6d62596f508cd4df10.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>(AssociationEnd)</a></span>
         
       </section>
 
@@ -59,17 +67,7 @@
         <h3>Description</h3>
         <div>
           
-            <p>+Fluxo Principal.</p>
-
-<ol><li>O usuário entra a interface de interação de ativos.</li><li>O usuário acessa área de seus ativos comprados.[FS001]</li><li>O usuário seleciona um de seus ativos.[FS002]</li><li>O usuário  seleciona a modificação de ordem de compra.</li></ol>
-
-<p>+Fluxo Secundário[FS001]</p>
-
-<ol><li>Usuário entra em seu perfil.</li><li>Usuário acessa o seu histórico de  OC. </li></ol>
-
-<p>+Fluxo Secundário [FS002]</p>
-
-<ol><li>O usuário seleciona a opção de cancelamento de ordem compra de ativos.</li><li>O usuário aguarda a autorização do S2.</li><li>O S2 autoriza o cancelamento de ordem de compra.</li></ol>
+            <span class="label label-info">none</span>
           
         </div>
       </section>
@@ -90,26 +88,6 @@
       <!-- Classifier -->
 
       
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-      
 
       <!-- Interface -->
 
@@ -128,29 +106,6 @@
       
 
       <!-- Use Case -->
-
-      
-        
-        
-<section class="element-list">
-    <h3>Actors</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='9b711e81b90aaff5f71537437865c816.html'><span class='node-icon staruml-icon icon-UMLActor'></span>Usuario</a></li>
-        
-        <li><a href='d75462a406b545920d9e4c66383faf4a.html'><span class='node-icon staruml-icon icon-UMLActor'></span>S2</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-
-
-        
-        
 
       
 
@@ -266,7 +221,7 @@
     
     <tr>
         <td>name</td>
-        <td>Modificação de OC</td>
+        <td></td>
     </tr>
     
     
@@ -280,8 +235,17 @@
     
     
     <tr>
+        <td>reference</td>
+        <td><a href='d75462a406b545920d9e4c66383faf4a.html'><span class='node-icon staruml-icon icon-UMLActor'></span>S2</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td></td>
     </tr>
     
     
@@ -297,18 +261,44 @@
     
     
     
-    
-    
-    
-    
-    
+    <tr>
+        <td>navigable</td>
+        <td>unspecified</td>
+    </tr>
     
     
     
     
     
     <tr>
-        <td>isAbstract</td>
+        <td>aggregation</td>
+        <td>none</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>multiplicity</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>defaultValue</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isReadOnly</td>
         <td><span class='label label-info'>false</span></td>
     </tr>
     
@@ -317,7 +307,7 @@
     
     
     <tr>
-        <td>isFinalSpecialization</td>
+        <td>isOrdered</td>
         <td><span class='label label-info'>false</span></td>
     </tr>
     
@@ -326,7 +316,7 @@
     
     
     <tr>
-        <td>isLeaf</td>
+        <td>isUnique</td>
         <td><span class='label label-info'>false</span></td>
     </tr>
     
@@ -335,10 +325,37 @@
     
     
     <tr>
-        <td>extensionPoints</td>
+        <td>isDerived</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isID</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>qualifiers</td>
         <td>
             
         </td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>ownerAttribute</td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
     
     
@@ -354,34 +371,11 @@
       <!-- Constraints, Dependencies, Dependants -->
 
       
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-      
 
       <!-- Relationships -->
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='c0248a3dacd93949150739a4ff2c360d.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Usuario—Modificação de OC)</a></li>
-        
-        <li><a href='e916bf47cff6ab70ba766752f7fa812e.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(S2—Modificação de OC)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->
